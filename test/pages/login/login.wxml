@@ -1,0 +1,25 @@
+<view class="container">
+<!--登录logo-->
+<view class="header">
+  <image src= "/assets/icons/logo.png" mode="aspectFill"></image>
+</view>
+<!--账号输入-->
+<view class="login">
+<view class="form-item">
+<image src="/assets/icons/用户.png" mode="aspectFill"></image>
+<input type="text" model:value="{{stuId}}"  placeholder="请输入学号"/>
+</view>
+<view class="form-item">
+<image src="/assets/icons/lock1.png" mode="aspectFill"></image>
+  <input type="password"model:value="{{password}}" placeholder="请输入密码"/>
+</view>
+<!--登录-->
+<view class="checkbox-item">
+<checkbox class="blue"></checkbox>
+<view>记住账号密码</view>
+</view>
+  <button bindtap="login">登录</button>
+  
+</view>
+
+</view>

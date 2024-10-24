@@ -1,0 +1,179 @@
+.container {
+  padding: 20rpx;
+  background-color: #f5f5f5;
+  min-height: 100vh; /* 保证页面占满全屏 */
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120rpx;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333333;
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 垂直居中对齐 */
+  padding: 20rpx;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+input {
+  flex: 1;
+  padding: 0 20rpx; /* 水平 padding，去掉垂直 padding */
+  height: 64rpx; /* 确保高度一致 */
+  line-height: 64rpx; /* 让文本和 placeholder 垂直居中 */
+  font-size: 32rpx;
+  margin-right: 20rpx; /* 保持输入框和按钮间距 */
+  box-sizing: border-box;
+  border-radius: 40rpx; /* 调整圆角使其与按钮一致 */
+  border: 1rpx solid #e5e5e5; /* 增加边框 */
+}
+
+.input-section button {
+  height: 64rpx; /* 确保按钮和输入框高度一致 */
+  padding: 0 20rpx; /* 去掉按钮的垂直 padding */
+  font-size: 32rpx; /* 调整按钮字体大小，使其与输入框一致 */
+  border-radius: 40rpx; /* 确保圆角一致 */
+  background-color: #409eff;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center; /* 确保按钮内文本垂直居中 */
+  justify-content: center; /* 确保按钮内文本水平居中 */
+}
+
+.input-section image {
+  width: 32rpx; /* 设置图标大小 */
+  height: 32rpx;
+  margin-right: 32rpx; /* 保持图标与输入框之间的间距 */
+}
+
+.current-product {
+  display: flex; /* 使用 flexbox 布局 */
+  align-items: center; /* 垂直居中对齐 */
+  padding: 20rpx; /* 内边距 */
+  background-color: #9c9c9c41; /* 背景颜色 */
+  border-bottom: 1px solid #e5e5e5; /* 下边框 */
+  margin-bottom: 20rpx; /* 与下方内容的间距 */
+}
+
+.product-label {
+  flex: 3; /* 商品信息占 3 部分 */
+  font-size: 28rpx; 
+  color: #333; 
+  font-weight: bold; /* 加粗标题 */
+}
+
+.quantity-label, .price-label, .subtotal-label {
+  flex: 1; /* 其他信息占 1 部分 */
+  text-align: center; /* 中心对齐 */
+  font-size: 28rpx; 
+  color: #333; 
+  font-weight: bold; /* 加粗标题 */
+}
+
+.product-list {
+  margin-top: 20rpx; /* 顶部间距 */
+  padding: 0 20rpx; /* 添加左右内边距 */
+}
+
+.product-item {
+  display: flex; /* 使用 flexbox 布局 */
+  align-items: center; /* 垂直居中对齐 */
+  padding: 15rpx 10rpx; /* 内边距 */
+  border-radius: 10rpx; /* 圆角 */
+  background-color: #ffffff; /* 背景颜色 */
+  box-shadow: 0 1rpx 5rpx rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+  margin-bottom: 10rpx; /* 与下方内容的间距 */
+}
+
+.product-name {
+  flex: 3; /* 商品名称占 3 部分 */
+  font-size: 28rpx; 
+  color: #333; 
+  text-align: left; /* 左对齐 */
+}
+.product-image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+  border-radius: 8rpx;
+}
+
+
+.quantity-section {
+  display: flex; /* 使用 flexbox 布局 */
+  align-items: center; /* 垂直居中对齐 */
+  flex: 1; /* 占 1 部分 */
+  justify-content: center; /* 中心对齐 */
+}
+
+.quantity-btn {
+  width: 40rpx; /* 按钮宽度 */
+  height: 40rpx; /* 按钮高度 */
+  background-color: #409eff; /* 按钮背景色 */
+  color: white; /* 按钮文字颜色 */
+  border: none;
+  border-radius: 5rpx; /* 圆角 */
+  font-size: 28rpx; /* 字体大小 */
+  margin: 0 5rpx; /* 按钮间距 */
+}
+
+.price-label, .subtotal-label {
+  flex: 1; /* 单价和小计各占 1 部分 */
+  font-size: 28rpx; 
+  color: #333; 
+  text-align: center; /* 中心对齐 */
+}
+
+.delete-btn {
+  background: none; /* 去掉背景 */
+  border: none; /* 去掉边框 */
+  padding: 0; /* 去掉内边距 */
+}
+
+.delete-icon {
+  width: 32rpx; /* 图标宽度 */
+  height: 32rpx; /* 图标高度 */
+}
+
+.total-section {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30rpx 20rpx;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 30rpx;
+}
+
+.total {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333333;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 25rpx;
+  background-color: #ff5000;
+  color: white;
+  font-size: 36rpx;
+  text-align: center;
+  border-radius: 5rpx;
+  margin-top: 40rpx;
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+
+

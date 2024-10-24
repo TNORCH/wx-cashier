@@ -1,0 +1,7 @@
+<view class="container">
+  <text class="title">结算</text>
+  <view class="checkout-info">
+    <text>总金额: ¥{{totalAmount}}</text>
+    <button bindtap="confirmOrder">确认订单</button>
+  </view>
+</view>

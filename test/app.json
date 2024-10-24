@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/cashier/cashier",
+    "pages/products/products",
+    "pages/stats/stats",
+    "pages/profile/profile",
+    "pages/checkout/checkout",
+    "pages/cart/cart"
+  ],
+  "window": {
+    "navigationBarTitleText": "霞易士多",
+    "navigationBarTextStyle":"black",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+
+    
+    "list": [
+      {
+        "pagePath": "pages/cashier/cashier",
+        "text": "收银",
+        "iconPath": "assets/icons/cashier.png",
+        "selectedIconPath": "assets/icons/cashier_active.png"
+      },
+      {
+        "pagePath": "pages/products/products",
+        "text": "商品",
+        "iconPath": "assets/icons/products.png",
+        "selectedIconPath": "assets/icons/products_active.png"
+      },
+      {
+        "pagePath": "pages/stats/stats",
+        "text": "统计",
+        "iconPath": "assets/icons/stats.png",
+        "selectedIconPath": "assets/icons/stats_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/icons/profile.png",
+        "selectedIconPath": "assets/icons/profile_active.png"
+      }
+    ]
+  }
+}

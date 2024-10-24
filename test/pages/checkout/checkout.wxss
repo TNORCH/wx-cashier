@@ -1,0 +1,22 @@
+.container {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.checkout-info {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #007aff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}

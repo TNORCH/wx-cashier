@@ -1,0 +1,36 @@
+<view class="container">
+  <text class="title">我的</text>
+<!-- 顶部用户信息区域 -->
+<view class="user-info">
+  <image class="avatar" src="/assets/images/user-avatar.png"></image>
+  <text class="username">{{username}}</text>
+</view>
+
+<!-- 功能列表 -->
+<view class="menu-list">
+  <navigator url="/pages/orders/orders" class="menu-item">
+    <image class="menu-icon" src="/assets/icons/orders.png"></image>
+    <text class="menu-title">我的订单</text>
+    <image class="arrow-icon" src="/assets/icons/arrow-right.png"></image>
+  </navigator>
+
+  <navigator url="/pages/favorites/favorites" class="menu-item">
+    <image class="menu-icon" src="/assets/icons/favorites.png"></image>
+    <text class="menu-title">我的收藏</text>
+    <image class="arrow-icon" src="/assets/icons/arrow-right.png"></image>
+  </navigator>
+
+  <navigator url="/pages/coupons/coupons" class="menu-item">
+    <image class="menu-icon" src="/assets/icons/coupons.png"></image>
+    <text class="menu-title">我的优惠券</text>
+    <image class="arrow-icon" src="/assets/icons/arrow-right.png"></image>
+  </navigator>
+
+  <navigator url="/pages/settings/settings" class="menu-item">
+    <image class="menu-icon" src="/assets/icons/settings.png"></image>
+    <text class="menu-title">设置</text>
+    <image class="arrow-icon" src="/assets/icons/arrow-right.png"></image>
+  </navigator>
+</view>
+
+</view>

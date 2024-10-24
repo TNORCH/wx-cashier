@@ -1,0 +1,47 @@
+<view class="container">
+  <text class="title">商品列表</text>
+
+  <view class="product-list">
+    <block wx:for="{{productList}}" wx:key="id">
+      <view class="product-item"
+            bindtouchstart="onTouchStart"
+            bindtouchmove="onTouchMove"
+            bindtouchend="onTouchEnd"
+            data-index="{{index}}"
+            data-id="{{item.id}}"
+            style="transform: translateX({{showActions === index ? '-100rpx' : '0'}}); transition: transform 0.3s;">
+        <image class="product-image" src="{{item.image}}" mode="aspectFill"></image>
+        <text class="product-name">{{item.name}}</text>
+        <text class="product-price">￥{{item.price}}</text>
+
+        <!-- 操作按钮 -->
+        <view class="actions" wx:if="{{showActions === index}}">
+          <button bindtap="deleteProduct" data-id="{{item.id}}">删除</button>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 固定在底部的商品管理 -->
+  <view class="fixed-form">
+    <text class="title">商品管理</text>
+    <button wx:if="{{!showForm}}" bindtap="toggleForm">添加商品</button>
+    <view wx:if="{{showForm}}" class="form">
+      <view class="form-item">
+        <text>商品名称：</text>
+        <input type="text" placeholder="请输入商品名称" bindinput="onNameInput" />
+      </view>
+      <view class="form-item">
+        <text>商品价格：</text>
+        <input type="number" placeholder="请输入商品价格" bindinput="onPriceInput" />
+      </view>
+      <view class="form-item">
+        <text>商品图片：</text>
+        <button bindtap="chooseImage">选择图片</button>
+        <image wx:if="{{image}}" src="{{image}}" mode="aspectFit" class="preview-image"></image>
+      </view>
+      <button bindtap="addProduct">提交商品</button>
+      <button bindtap="toggleForm">取消</button>
+    </view>
+  </view>
+</view>

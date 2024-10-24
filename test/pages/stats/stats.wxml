@@ -1,0 +1,36 @@
+<!-- 顶部导航栏 -->
+<view class="navbar">
+  <text class="navbar-title">统计报表</text>
+</view>
+
+<!-- 筛选区域，增加提示信息和图标 -->
+<view class="filter-container">
+  <view class="filter-header">
+    <text class="filter-label">请选择商品种类：</text>
+    <image class="filter-icon" src="/assets/icons/filter-icon.png"></image>
+  </view>
+
+  <picker mode="selector" value="{{selectedIndex}}" range="{{categories}}" bindchange="onCategoryChange">
+    <view class="picker">
+      <text class="picker-text">{{categories[selectedIndex]}}</text>
+      <image class="picker-icon" src="/assets/icons/arrow-down.png"></image>
+    </view>
+  </picker>
+</view>
+
+<view class="stats-container">
+  <view class="stat-card">
+    <text class="stat-value">{{salesAmount}} 元</text>
+    <text class="stat-title">销售额</text>
+  </view>
+
+  <view class="stat-card">
+    <text class="stat-value">{{grossProfit}} 元</text>
+    <text class="stat-title">毛利</text>
+  </view>
+
+  <view class="stat-card">
+    <text class="stat-value">{{orderCount}} 单</text>
+    <text class="stat-title">订单数</text>
+  </view>
+</view>
